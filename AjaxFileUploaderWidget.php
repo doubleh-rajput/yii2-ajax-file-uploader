@@ -1,7 +1,8 @@
 <?php
 
-namespace doublehrajput\yii2\ajaxfileuploader;
+namespace extensions\yii2ajaxfileuploader;
 
+use yii\bootstrap\Progress;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\InputWidget;
@@ -34,8 +35,17 @@ class AjaxFileUploaderWidget extends InputWidget
 
         //The global progress bar
         echo '<p>Upload progress</p>';
-        echo '<div id="progress" class="progress progress-success progress-striped">
-        <div class="bar"></div></div>';
+
+        echo Progress::widget([
+            'barOptions' => [
+                'class' => 'progress-bar-success',
+                'aria-valuemax' => false,
+                'aria-valuemin' => false,
+                'role' => false,
+                'id' => 'bar'
+            ],
+            'options' => ['class' => false , 'id' => false]
+        ]);
 
         //The list of files uploaded
         echo '<p>Files uploaded:</p><ul id="files"></ul>';
@@ -77,7 +87,7 @@ class AjaxFileUploaderWidget extends InputWidget
                 progressall: function (e, data) {
                     // Update the progress bar while files are being uploaded
                     var progress = parseInt(data.loaded / data.total * 100, 10);
-                    $('#progress .bar').css(
+                    $('.progress #bar').css(
                             'width',
                             progress + '%'
                     );
