@@ -4,7 +4,7 @@
  * Date: 4/3/2016
  * Time: 12:21 PM
  */
-namespace extensions\yii2ajaxfileuploader;
+namespace doublehrajput\yii2\ajaxfileuploader;
 
 use yii\base\Action;
 use Yii;

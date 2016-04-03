@@ -5,7 +5,7 @@
  * Time: 11:50 AM
  */
 
-namespace extensions\yii2ajaxfileuploader;
+namespace doublehrajput\yii2\ajaxfileuploader;
 
 use yii\web\AssetBundle;
 

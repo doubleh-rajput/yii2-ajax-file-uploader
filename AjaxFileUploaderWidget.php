@@ -1,6 +1,6 @@
 <?php
 
-namespace extensions\yii2ajaxfileuploader;
+namespace doublehrajput\yii2\ajaxfileuploader;
 
 use yii\bootstrap\Progress;
 use yii\helpers\Html;
