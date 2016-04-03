@@ -1,0 +1,21 @@
+{
+    "name": "doubleh-rajput/yii2-ajax-file-uploader",
+    "description": "Yii2 Ajax base File Uploader in Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Harish Rajput",
+            "email": "doublehrajput@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "doublehrajput\\yii2\\ajaxfileuploader\\": ""
+        }
+    }
+}
